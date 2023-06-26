@@ -1,0 +1,21 @@
+Source: vkbasalt-cli
+Section: python
+Priority: optional
+Maintainer: Debian Python Team <team+python@tracker.debian.org>
+Build-Depends: debhelper-compat (= 13),
+               pybuild-plugin-pyproject,
+               dh-python,
+               python3-all-dev,
+               python3-setuptools,
+               libyaml-dev (>= 0.2.2~),
+               cython3,
+               vkbasalt
+Rules-Requires-Root: no
+Standards-Version: 4.6.1
+Homepage: https://gitlab.com/TheEvilSkeleton/vkbasalt-cli
+
+Package: python3-vkbasalt-cli
+Architecture: any
+Multi-Arch: allowed
+Depends: ${python3:Depends}, ${shlibs:Depends}, ${misc:Depends}, vkbasalt
+Description: vkbasalt-cli (filename vkbasalt) is a CLI utility and library in conjunction with vkBasalt. This makes generating configuration files or running vkBasalt with games easier. This is mainly convenient in environments where integrating vkBasalt is wishful, for example a GUI application. Integrating vkbasalt-cli allows a front-end to easily generate and use specific configurations on the fly, without asking the user to manually write a configuration file.
