@@ -1,5 +1,5 @@
 # Clone Upstream
-git clone https://gitlab.com/TheEvilSkeleton/vkbasalt-cli -b 3.1.1
+git clone https://gitlab.com/TheEvilSkeleton/vkbasalt-cli -b v3.1.1
 cp -rvf ./debian ./vkbasalt-cli/
 cd ./vkbasalt-cli
 
